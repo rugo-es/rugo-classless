@@ -1,0 +1,15 @@
+body {
+  align-items: center;
+}
+header {
+  text-align: center;
+}
+main {
+  width: 100%;
+  max-width: 400px;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+}

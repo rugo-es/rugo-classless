@@ -2,257 +2,299 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rugo.css</title>
+  <link rel="stylesheet" href="css/website.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
-  <h1>Rugo CSS Class-less</h1>
+<body class="content-column">
 
-  <ol>
-    <li>Todo en el CSS a mano y maquina de escribir</li>
-    <li>Ejemplos de codigo (Copy & paste)</li>
-  </ol>
+  <header>
+    <h1>rugo.css</h1>
+    <h2>A handwriting style class-less</h2>
+  </header>
 
-  <ul>
-    <li>Tipografia</li>
-    <li>Listas</li>
-    <li>Botones y enlaces</li>
-    <li>Formularios</li>
-    <li>Accordition</li>
-    <li>Progress</li>
-    <li>Dialog</li>
-    <li>Tablas</li>
-    <li>Imagenes</li>
-    <li>Audio</li>
-    <li>Video</li>
-  </ul>
+  <main>
+    <!-- TODO -->
+    <section style="border: 2px solid black;">
+      TODO:
+      <ul>
+        <li>Agrega las variables de colores</li>
+        <li>Estilar el scrollbar???</li>
+        <li>Ejemplo de código para copy y paste</li>
+        <li>Dark/Light mode</li>
+        <li>Verion .css y min.css</li>
+        <li>Gulp para minifier???</li>
+      </ul>
+    </section>
+    <!-- Lobby -->
+    <section>
+      <header>
+        <h2>Lobby</h2>
+      </header>
+      <ul>
+        <li>Tipografia</li>
+        <li>Listas</li>
+        <li>Botones y enlaces</li>
+        <li>Formularios</li>
+        <li>Accordition</li>
+        <li>Progress</li>
+        <li>Dialog</li>
+        <li>Tablas</li>
+        <li>Imagenes</li>
+        <li>Audio</li>
+        <li>Video</li>
+      </ul>
+    </section>
+    <!-- Tipografy -->
+    <section>
+      <header>
+        <h2>Tipografy</h2>
+        <h3>Font</h3>
+      </header>
 
-  <section>
-    <header>
-      <h2>Tipografia</h2>
-    </header>
-  
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+      <span>a b c d e f g h i j k l m n o p q r s t u v w x y z</span><br>
+      <span>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span><br>
+      <span>0 1 2 3 4 5 6 7 8 9</span>
 
-    <p>Lorem ipsum dolor amaet...</p>
+      <header>
+        <h3>Formats</h3>
+      </header>
 
-    <strong>strong</strong>
-    <em>Italic</em>
-    <u>Underline</u>
-    <small>small</small>
-    <mark>Mark</mark>
-    <code>code</code>
-    <kbd>Kbd</kbd>
-    <del>del</del>
+      <p>Lorem ipsum dolor amaet...</p>
 
-    <blockquote>Esto es un blockquote</blockquote>
+      <div class="content-column">
+        <strong>strong</strong>
+        <em>Italic</em>
+        <u>Underline</u>
+        <small>small</small>
+        <mark>Mark (Estilo subrayador)</mark>
+        <code>function code() {}</code>
+        <kbd>Kbd</kbd>
+        <del>del</del>
+      </div>
 
-    <pre>
-      Texto sin formato, aqui usa una monospace que este chula mamon
-    </pre>
-  </section>
+      <blockquote>Esto es un blockquote</blockquote>
 
-  <section>
-    <header>
-      <h2>Listas</h2>
-    </header>
+      <header>
+        <h3>Headings</h3>
+      </header>
 
-    <ol>
-      <li>Elemento 1</li>
-      <li>Elemento 2</li>
-      <li>Elemnto 3</li>
-      <li>Elemento 4</li>
-      <li>Elemento 4</li>
-    </ol>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </section>
+    <!-- Lists -->
+    <section>
+      <header>
+        <h2>Listas</h2>
+      </header>
 
-    <ul>
-      <li>Elemento 1</li>
-      <li>Elemento 2</li>
-      <li>Elemnto 3</li>
-      <li>Elemento 4</li>
-      <li>Elemento 4</li>
-    </ul>
+      <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemnto 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 4</li>
+      </ol>
 
-    <dl>
-      <dt>Coffee</dt>
-      <dd>Black hot drink</dd>
-      <dt>Milk</dt>
-      <dd>White cold drink</dd>
-    </dl>
-  </section>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemnto 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 4</li>
+      </ul>
 
-  <section>
-    <header>
-      <h2>Buttons and anchors</h2>
-    </header>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+      </dl>
+    </section>
+    <!-- Buttons & anchor-->
+    <section>
+      <header>
+        <h2>Buttons and anchors</h2>
+      </header>
 
-    <p>Estado de los botones (hover, active...)</p>
+      <div class="content-column">
+        <p>Estado de los botones (hover, active...)</p>
 
-    <button>My button</button>
-    <button disabled>My button</button>
+        <button>My button</button>
+        <button disabled>My button</button>
 
-    <a href="#">Link</a>
-    <small>Ten en cuenta que sean mailto, tel, sms...</small>
-  </section>
+        <a href="#">Link</a>
+        <small>Ten en cuenta que sean mailto, tel, sms...</small>
+      </div>
+    </section>
+    <!-- Forms -->
+    <section>
+      <header>
+        <h2>Formularios</h2>
+      </header>
 
-  <section>
-    <header>
-      <h2>Formularios</h2>
-    </header>
+      <div class="content-column">
+      <p>Ten en cuenta el fieldset y las label</p>
+      <p>Ten en cuenta que esta valid/invalid con data-propeties</p>
+      <p>Disabled</p>
 
-    <p>Ten en cuenta el fieldset y las label</p>
-    <p>Ten en cuenta que esta valid/invalid con data-propeties</p>
-    <p>Disabled</p>
-
-    <form action="">
-      <input type="text">
-      <input type="email" name="" id="">
-      <input type="password" name="" id="">
-      <input type="date" name="" id="">
-      <input type="time" name="" id="">
-      <input type="checkbox" name="" id="">
-      <input type="radio" name="" id="">
-      <input type="file" name="" id="">
-      <input type="number" name="" id="">
-      <input type="range" name="" id="">
-      <input type="color" name="" id="">
-      <select name="" id="">
-        <option value="">option 1</option>
-        <option value="">option 2</option>
-        <option value="">option 3</option>
-      </select>
-      <select id="dino-select">
-        <optgroup label="Theropods">
-          <option>Tyrannosaurus</option>
-          <option>Velociraptor</option>
-          <option>Deinonychus</option>
-        </optgroup>
-        <optgroup label="Sauropods">
-          <option>Diplodocus</option>
-          <option>Saltasaurus</option>
-          <option>Apatosaurus</option>
-        </optgroup>
-      </select>
-      <textarea name="" id=""></textarea>
-    </form>
-  </section>
-
-  <section>
-    <header>
-      <h2>Summary</h2>
-    </header>
-
-    <details open="">
-      <summary>Details</summary>
-      Something small enough to escape casual notice.
-    </details>
-  </section>
-
-  <section>
-    <header>
-      <h2>Progress</h2>
-    </header>
-    <div>
-      <h3 class="demo-header">progress</h3>
-      <label for="file">File progress</label>
-      <progress id="file" max="100" value="70">70%</progress>
-    </div>
-  </section>
-
-  <section>
-    <header>
-      <h2>Dialog</h2>
-    </header>
-
-    <dialog open>
-      <p>Greetings, one and all!</p>
-      <form method="dialog">
-        <button>OK</button>
+      <form action="" class="content-column">
+        <input type="text">
+        <input type="email" name="" id="">
+        <input type="password" name="" id="">
+        <input type="date" name="" id="">
+        <input type="time" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="radio" name="" id="">
+        <input type="file" name="" id="">
+        <input type="number" name="" id="">
+        <input type="range" name="" id="">
+        <input type="color" name="" id="">
+        <select name="" id="">
+          <option value="">option 1</option>
+          <option value="">option 2</option>
+          <option value="">option 3</option>
+        </select>
+        <select id="dino-select">
+          <optgroup label="Theropods">
+            <option>Tyrannosaurus</option>
+            <option>Velociraptor</option>
+            <option>Deinonychus</option>
+          </optgroup>
+          <optgroup label="Sauropods">
+            <option>Diplodocus</option>
+            <option>Saltasaurus</option>
+            <option>Apatosaurus</option>
+          </optgroup>
+        </select>
+        <textarea name="" id=""></textarea>
       </form>
-    </dialog>
-  </section>
+      </div>
 
-  <section>
-    <header>
-      <h2>Tablas</h2>
-    </header>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Home Runs</th>
-          <th>AVG</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mike Trout</td>
-          <td>45</td>
-          <td>.291</td>
-        </tr>
-        <tr>
-          <td>Christian Yelich</td>
-          <td>44</td>
-          <td>.329</td>
-        </tr>
-        <tr>
-          <td>Mookie Betts</td>
-          <td>29</td>
-          <td>.295</td>
-        </tr>
-        <tr>
-          <td>Cody Bellinger</td>
-          <td>47</td>
-          <td>.305</td>
-        </tr>
-      </tbody>
-    </table>
+    </section>
+    <!-- Summary -->
+    <section>
+      <header>
+        <h2>Summary</h2>
+      </header>
 
-  </section>
+      <details open>
+        <summary>Details</summary>
+        Something small enough to escape casual notice.
+      </details>
+      <details>
+        <summary>Details</summary>
+        Something small enough to escape casual notice.
+      </details>
+    </section>
+    <!-- Progress -->
+    <section>
+      <header>
+        <h2>Progress</h2>
+      </header>
+      <div>
+        <label for="file">File progress</label>
+        <progress id="file" max="100" value="70">70%</progress>
+      </div>
+    </section>
+    <!-- Dialog -->
+    <section>
+      <header>
+        <h2>Dialog</h2>
+      </header>
 
-  <section>
-    <header>
-      <h2>Imagenes</h2>
-    </header>
+      <dialog open>
+        <p>Greetings, one and all!</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+    </section>
+    <!-- Table -->
+    <section>
+      <header>
+        <h2>Tablas</h2>
+      </header>
 
-    <img src="https://picsum.photos/200/300" alt="" srcset="">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Home Runs</th>
+            <th>AVG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mike Trout</td>
+            <td>45</td>
+            <td>.291</td>
+          </tr>
+          <tr>
+            <td>Christian Yelich</td>
+            <td>44</td>
+            <td>.329</td>
+          </tr>
+          <tr>
+            <td>Mookie Betts</td>
+            <td>29</td>
+            <td>.295</td>
+          </tr>
+          <tr>
+            <td>Cody Bellinger</td>
+            <td>47</td>
+            <td>.305</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <figure>
-      <img alt="This is a black swan" src="https://picsum.photos/200/300" />
-      <figcaption>This is a black swan</figcaption>
-    </figure>
-  </section>
+    </section>
+    <!-- Images -->
+    <section>
+      <header>
+        <h2>Imagenes</h2>
+      </header>
 
-  <section>
-    <header>
-      <h2>Audio</h2>
-    </header>
+      <img src="https://picsum.photos/200/300" alt="" srcset="">
 
-    <audio controls="" src="https://diviextended.com/wp-content/uploads/2021/10/sound-of-waves-marine-drive-mumbai.mp3">
-      Your browser does not support the
-      <code>audio</code> element.
-    </audio>
+      <figure>
+        <img alt="This is a black swan" src="https://picsum.photos/200/300" />
+        <figcaption>This is a black swan</figcaption>
+      </figure>
+    </section>
+    <!-- Audio-->
+    <section>
+      <header>
+        <h2>Audio</h2>
+      </header>
 
-  </section>
+      <audio controls=""
+        src="https://diviextended.com/wp-content/uploads/2021/10/sound-of-waves-marine-drive-mumbai.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
 
-  <section>
-    <header>
-      <h2>Video</h2>
-    </header>
+    </section>
+    <!-- Video -->
+    <section>
+      <header>
+        <h2>Video</h2>
+      </header>
 
-    <video controls="" poster="poster.png">
-      <source src="https://v3.cdnpk.net/videvo_files/video/free/2013-07/large_preview/hd0051.mp4" type="video/mp4">
-      Sorry, your browser doesn't support embedded videos.
-    </video>
-  </section>
-
+      <video controls="" poster="poster.png">
+        <source src="https://v3.cdnpk.net/videvo_files/video/free/2013-07/large_preview/hd0051.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </section>
+  </main>
+  <footer>
+    Este sera el pie de página
+  </footer>
 </body>
 </html>

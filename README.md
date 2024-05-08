@@ -12,8 +12,8 @@
 
 - [x] Pintar diferentes elemntos
 - [x] Distribuir elementos con un orden
-- [ ] Maquetar la web
-- [ ] Dar estilo, handwritting y máquina de escribir
+- [x] Maquetar la web
+- [x] Dar estilo, handwritting y máquina de escribir
 - [ ] Responsive
 - [ ] Estilos dark/light
 
