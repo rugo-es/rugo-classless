@@ -1,27 +1,53 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-@font-face {
-  font-family: 'Syne Mono';
-  font-style: normal;
-  font-display: swap;
-  src:
-    url(https://cdn.jsdelivr.net/fontsource/fonts/syne-mono@latest/latin-400-normal.woff2) format('woff2'),
-    url(https://cdn.jsdelivr.net/fontsource/fonts/syne-mono@latest/latin-400-normal.woff) format('woff');
-  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+
+:root {
+  --ligthwhite: rgb(230, 228, 228);
+  --black: black;
 }
 
 body {
   font-family: "Caveat", cursive;
-  background-color: rgb(230, 228, 228);
+  font-size: 1.5rem;
+  background-color: var(--ligthwhite);
+}
+
+mark {
+  background: url(/mark.png);
+}
+
+del, u {
+  text-decoration-color: red;
+}
+
+code, kbd, pre {
+  font-family: "Caveat", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: .15rem .4rem;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 35px;
 }
 
 code, kbd {
-  font-family: 'Syne Mono', monospace;
+  color: blue;
+  border: solid 2px blue;
+}
+
+pre {
+  border: solid 2px var(--black);
+  background: rgb(239, 223, 104);
+  background: linear-gradient(0deg, rgba(239, 223, 104, 1) 0%, rgba(245, 234, 119, 1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 20px 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+
 h1 {font-size: 3rem;}
 h2 {font-size: 2.6rem;}
 h3 {font-size: 2rem;}
@@ -29,4 +55,6 @@ h4 {font-size: 1.44rem;}
 h5 {font-size: 1.15rem;}
 h6 {font-size: 0.96rem;}
 
-
+ul {
+  list-style-image: url('/point-list.svg');
+}
