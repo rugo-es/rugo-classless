@@ -4,6 +4,15 @@
 :root {
   --ligthwhite: rgb(230, 228, 228);
   --black: black;
+  --blue: #4169e1;
+  --btn-color: #0f5a8d;
+  --btn-bg: #f8b1b5;
+  --btn-shadow: #e7a4a7;
+  --btn-border: #e7a4a7;
+  --btn-disabled-color: #b5b0b0;
+  --btn-disabled-bg: #d0d2d5;
+  --btn-disabled-shadow: #c0c2c4;
+  --btn-disabled-border: #c0c2c4;
 }
 
 body {
@@ -13,7 +22,9 @@ body {
 }
 
 mark {
-  background: url(/mark.png);
+  background: url(/subrayador.svg);
+  background-repeat: repeat-x;
+  background-position: center;
 }
 
 del, u {
@@ -32,8 +43,8 @@ code, kbd, pre {
 }
 
 code, kbd {
-  color: blue;
-  border: solid 2px blue;
+  color: var(--blue);
+  border: solid 2px var(--blue);
 }
 
 pre {
@@ -57,4 +68,131 @@ h6 {font-size: 0.96rem;}
 
 ul {
   list-style-image: url('/point-list.svg');
+}
+
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--btn-color);
+  text-transform: uppercase;
+  padding: 1.5em 1.5em;
+  margin: 12px 5px;
+  background: var(--btn-bg);
+  border: 2px solid var(--btn-border);
+  border-radius: 0.3em;
+
+  transform: rotate(3deg);
+
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -webkit-transition:
+    transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition:
+    transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+
+}
+
+button::before {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ background: var(--btn-shadow);
+ border-radius: inherit;
+
+ -webkit-box-shadow: 0 0 0 2px var(--btn-shadow);
+ box-shadow: 0 0 0 2px var(--btn-shadow);
+ -webkit-transform: translate3d(0, 0.75em, -1em);
+ transform: translate3d(0, 0.75em, -1em);
+ transition:
+  transform 150ms cubic-bezier(0, 0, 0.58, 1),
+  -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1)
+}
+
+button:hover {
+  transform: rotate(-3deg);
+}
+
+button:active {
+  animation-name: wiggle;
+  animation-duration: 500ms;
+}
+
+button:disabled,
+button[disabled] {
+  background: var(--btn-disabled-bg);
+  border: 2px solid var(--btn-disabled-border);
+  color: var(--btn-disabled-color);
+  animation: none;
+}
+
+button[disabled]::before {
+  background: var(--btn-disabled-shadow);
+  -webkit-box-shadow: 0 0 0 2px var(--btn-disabled-shadow);
+  box-shadow: 0 0 0 2px var(--btn-disabled-shadow);
+}
+
+@keyframes wiggle {
+  15%  {transform: rotate(3deg);}
+  30%  {transform: rotate(-3deg);}
+  45%  {transform: rotate(3deg);}
+  60%  {transform: rotate(-3deg);}
+  75%  {transform: rotate(3deg);}
+  90%  {transform: rotate(-3deg);}
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  background: url(/link-line-blue.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  background-size:cover;
+}
+
+a[href^='mailto'] {
+
+}
+
+a[href^='mailto']::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-image: url('/correo.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  filter: invert(41%) sepia(77%) saturate(4025%) hue-rotate(215deg) brightness(93%) contrast(89%);
+  transform: translateY(5px);
+}
+
+a[href^='tel']::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-image: url('/telefono.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  filter: invert(41%) sepia(77%) saturate(4025%) hue-rotate(215deg) brightness(93%) contrast(89%);
+  transform: translateY(5px);
 }

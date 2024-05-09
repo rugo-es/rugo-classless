@@ -13,3 +13,25 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.btn-green {
+  background: #afe8b3;
+  border: 2px solid  #a4dfab;;
+}
+
+.btn-green::before {
+  background: #a4dfab;
+  -webkit-box-shadow: 0 0 0 2px #a4dfab;
+  box-shadow: 0 0 0 2px #a4dfab;
+}
+
+.btn-white {
+  background: #f0eee5;
+  border: 2px solid #e5dfd4;
+}
+
+.btn-white::before {
+  background: #e5dfd4;
+  -webkit-box-shadow: 0 0 0 2px #e5dfd4;
+  box-shadow: 0 0 0 2px #e5dfd4;
+}
